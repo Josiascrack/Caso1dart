@@ -19,10 +19,10 @@ void main(List<String> args) {
 
 class automovil{
 
-  int cilindros;
-  int llantas;
-  int puertas:
-  String combustible;
+  int ?cilindros;
+  int ?llantas;
+  int ?puertas;
+  String ?combustible;
 
   void velocidad(String velocidad){
     print('Velocidad; $velocidad');
@@ -32,7 +32,7 @@ class automovil{
 
 class Carro extends automovil{
 
-  bool turbo;
+  bool ?turbo;
 
   void infoCarro(){
     print('Turbo: $turbo');
@@ -42,8 +42,8 @@ class Carro extends automovil{
 
 class Trailer extends automovil{
 
-  bool remolque;
-  bool dobleremolque;
+  bool ?remolque;
+  bool ?dobleremolque;
 
   void infoTrailer(){
     print('Remolque: $remolque Doble Remolque: $dobleremolque');
